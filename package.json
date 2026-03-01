@@ -16,6 +16,7 @@
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/tailwind": "^5.1.4",
     "@astrojs/vercel": "^8.2.7",
+    "@iconify-json/simple-icons": "^1.2.71",
     "astro": "^5.1.1",
     "astro-icon": "^1.1.0",
     "d3": "^7.9.0",

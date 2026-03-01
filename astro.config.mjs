@@ -8,7 +8,7 @@ import { remarkReadingTime } from "./remark-reading-time.mjs";
 // https://astro.build/config
 export default defineConfig({
   site: "https://anikasomaia.com",
-  integrations: [tailwind(), icon(), sitemap()],
+  integrations: [tailwind(), icon({ iconDir: "src/icons" }), sitemap()],
   output: "server",
   adapter: vercel(),
   markdown: {

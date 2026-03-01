@@ -53,6 +53,12 @@ export const socialLinks: SocialLink[] = [
     external: true,
   },
   {
+    title: "X",
+    url: "https://x.com/anikasomaia",
+    icon: "x",
+    external: true,
+  },
+  {
     title: "Mail",
     url: "mailto:anika.somaia@columbia.edu",
     icon: "mdi:email",
