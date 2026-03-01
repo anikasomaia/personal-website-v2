@@ -55,11 +55,12 @@ const BOOKS = [
         <li class="flex items-baseline gap-2 text-sm">
           <span class="opacity-60 shrink-0">{book.country}</span>
           <span class="opacity-30">–</span>
-          <span class="font-medium">{book.favorite ? "* " : ""}{book.title}</span>
-          {book.author && <span class="opacity-60">by {book.author}</span>}
+          <span class="font-medium">{book.title}</span>
+          {book.author && <span class="opacity-60">by {book.author}{book.favorite ? " *" : ""}</span>}
         </li>
       ))}
     </ul>
+    <p class="text-xs opacity-40 mt-8">* personal favorite</p>
   </section>
 </Layout>
 
