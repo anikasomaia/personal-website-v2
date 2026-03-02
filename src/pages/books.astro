@@ -41,7 +41,7 @@ const BOOKS = [
     image: identity.logo,
   }}
 >
-  <section class="mt-10 max-w-2xl mx-auto px-6">
+  <section class="mt-10 max-w-2xl mx-auto px-6 scroll-reveal">
     <h1 class="font-bold text-3xl mb-1">Bookshelf</h1>
     <p class="opacity-40 mb-10">Tracking my progress as I read a book from every country in the world.</p>
   </section>
@@ -49,7 +49,7 @@ const BOOKS = [
   </section>
   <div id="tooltip" class="books-tooltip"></div>
   <script id="books-data" type="application/json" set:html={JSON.stringify(BOOKS)} />
-  <section class="mt-16 max-w-2xl mx-auto px-6 mb-20">
+  <section class="mt-16 max-w-2xl mx-auto px-6 mb-20 scroll-reveal">
     <ul class="space-y-3">
       {BOOKS.map((book) => (
         <li class="flex items-baseline gap-2 text-sm">

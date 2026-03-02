@@ -180,6 +180,17 @@ const fullImageURL = seo.image?.startsWith("http")
         </div>
       </div>
     </footer>
+    <script is:inline>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
+    </script>
   </body>
 </html>
 
@@ -237,5 +248,15 @@ const fullImageURL = seo.image?.startsWith("http")
 
   .dark .mb-14 a:hover, .dark .mb-6 a:hover {
     color: #93c5fd;
+  }
+
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 </style>
