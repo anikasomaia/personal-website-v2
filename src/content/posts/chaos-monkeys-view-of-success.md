@@ -4,6 +4,7 @@ pubDate: 2026-01-20
 description: "How messy and irrational is success, really?"
 author: "Anika Somaia"
 image: { url: "/chaos_monkeys.jpg", alt: "Chaos Monkeys book cover" }
+draft: true
 ---
 
 I just finished *Chaos Monkeys* – Antonio García Martínez's memoir about ad tech, Y Combinator, and Facebook. It's messy and sometimes arrogant, but it's the most honest thing I've read about how Silicon Valley actually works. The core argument is uncomfortable: success is less rational than we pretend.
