@@ -1,7 +1,7 @@
 ---
 title: "How Markov Chains and Recursion Decide Every Tennis Game"
 pubDate: 2025-02-07
-description: "Tennis is actually mathematically structured so you can lose more points than you win and still take the match. I think about this a lot."
+description: "In tennis you can lose more points than you win and still take the match. I think about this a lot"
 author: "Anika Somaia"
 image: { url: "/blog1.jpg", alt: "Tennis court" }
 claudePrompt: "Claude, skip the math"
