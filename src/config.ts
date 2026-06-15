@@ -139,7 +139,7 @@ I enjoy pretty much anything outdoors, especially snowboarding and kitesurfing.
 `
 , // Markdown is supported
     image_l: {
-      url: "/deepmind.svg",
+      url: "/deepmind_icon.png",
       alt: "DeepMind",
       link: "https://deepmind.google",
     },
@@ -212,7 +212,7 @@ export const workPageContent: WorkPageContent = {
       title: "Research Engineer",
       company: {
         name: "Google DeepMind",
-        image: "/deepmind.svg",
+        image: "/deepmind_icon.png",
         url: "https://deepmind.google",
       },
       date: "Jun 2026 - Present",
