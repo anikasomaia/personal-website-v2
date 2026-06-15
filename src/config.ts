@@ -119,25 +119,29 @@ export const aboutPageContent: AboutPageContent = {
   subtitle: "",
   about: {
     description: `
-I'm Anika Somaia, a software engineer intern at LangChain working on AI observability products and a Neo Scholar (2025 cohort). Previously, I worked on generative video models at Pika.
+I'm Anika Somaia, a junior at Columbia studying Computer Science and Math, and a Neo Scholar (2025 cohort).
 
 &nbsp;
 
-I'm currently on leave from Columbia University, where I study Computer Science and Math, serve as research lead at Columbia's AI Alignment Club, and play tennis. 
+I'm currently working on model capability research at DeepMind. Previously, I worked on AI observability products at LangChain, and generative video models at Pika.
 
 &nbsp;
 
-I also enjoy pretty much anything outdoors (especially snowboarding and kitesurfing) and traveling to new places.
+At Columbia, I research agent failure at DAPLab, lead the AI Alignment Club, and am part of Columbia's entrepreneurship club, CORE.
 
 &nbsp;
 
-<a href="/work" style="font-weight: bold; text-decoration: none; color: inherit;">Learn more →</a> 
+I enjoy pretty much anything outdoors, especially snowboarding and kitesurfing.
+
+&nbsp;
+
+<a href="/work" style="font-weight: bold; text-decoration: none; color: inherit;">Learn more →</a>
 `
 , // Markdown is supported
     image_l: {
-      url: "/langchain2.webp",
-      alt: "LangChain",
-      link: "https://langchain.com",
+      url: "/deepmind.webp",
+      alt: "DeepMind",
+      link: "https://deepmind.google",
     },
     image_r: {
       url: "/neo.webp",
@@ -205,13 +209,23 @@ export const workPageContent: WorkPageContent = {
   description: `I've worked across research, education, and industry, focusing on AI safety, machine learning, and software engineering.`,
   items: [
     {
+      title: "Research Intern",
+      company: {
+        name: "Google DeepMind",
+        image: "/deepmind.webp",
+        url: "https://deepmind.google",
+      },
+      date: "Jun 2026 - Present",
+      description: "Model capability research.",
+    },
+    {
       title: "Software Engineer",
       company: {
         name: "LangChain",
         image: "/langchain.webp",
         url: "https://www.langchain.com/langsmith",
       },
-      date: "Jun 2025 - Present",
+      date: "Jun 2025 - Dec 2025",
       description: "Observability and evals. Learn more →",
     },
     {
