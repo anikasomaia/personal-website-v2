@@ -216,7 +216,7 @@ export const workPageContent: WorkPageContent = {
         url: "https://deepmind.google",
       },
       date: "Jun 2026 - Present",
-      description: "Model capability research.",
+      description: "",
     },
     {
       title: "Software Engineer",
