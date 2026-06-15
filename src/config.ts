@@ -123,7 +123,7 @@ I'm Anika Somaia, a junior at Columbia studying Computer Science and Math, and a
 
 &nbsp;
 
-I'm currently working on model capability research at DeepMind. Previously, I worked on AI observability products at LangChain, and generative video models at Pika.
+I'm working on models at DeepMind this summer. Previously, I worked on AI observability products at LangChain, and generative video models at Pika.
 
 &nbsp;
 
@@ -139,7 +139,7 @@ I enjoy pretty much anything outdoors, especially snowboarding and kitesurfing.
 `
 , // Markdown is supported
     image_l: {
-      url: "/deepmind.webp",
+      url: "/deepmind.svg",
       alt: "DeepMind",
       link: "https://deepmind.google",
     },
@@ -209,10 +209,10 @@ export const workPageContent: WorkPageContent = {
   description: `I've worked across research, education, and industry, focusing on AI safety, machine learning, and software engineering.`,
   items: [
     {
-      title: "Research Intern",
+      title: "Research Engineer",
       company: {
         name: "Google DeepMind",
-        image: "/deepmind.webp",
+        image: "/deepmind.svg",
         url: "https://deepmind.google",
       },
       date: "Jun 2026 - Present",

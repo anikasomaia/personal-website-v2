@@ -1,7 +1,7 @@
 ---
 title: "You're Not Losing Your Mind"
 pubDate: 2026-03-30
-description: "What Wittgenstein taught me about thinking machines and thinking with machines"
+description: "AI does not make us dumber like we think"
 author: "Anika Somaia"
 image: { url: "/leibniz.jpg", alt: "The Leibniz Calculator" }
 draft: false
