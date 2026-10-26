@@ -90,8 +90,8 @@ export const homePageContent: HomePageContent = {
   ],
   currentlyReading: [
     {
-      title: "Chaos Monkeys",
-      author: "Antonio García Martínez",
+      title: "Breakneck",
+      author: "Dan Wang",
     },
     {
       title: "How Not to Be Wrong: The Power of Mathematical Thinking",
