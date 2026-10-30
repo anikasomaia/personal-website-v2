@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import { getCollection, render } from "astro:content";
 import { Image } from "astro:assets";
 import { identity } from "../../config";
+import RotatingAvatar from "../../components/RotatingAvatar.astro";
 
 const { id } = Astro.params;
 
@@ -32,13 +33,7 @@ const claudePrompt = entry.data.claudePrompt || "Too long? Ask Claude";
       {entry.data.description}
     </p>
     <div class="flex gap-4 mb-6">
-      <Image
-        src={identity.logo}
-        alt={identity.name}
-        width={40}
-        height={40}
-        class="w-[40px] aspect-square object-cover rounded-full bg-white"
-      />
+      <RotatingAvatar compact />
       <div>
         <p class="font-medium">{identity.name}</p>
         <p class="opacity-60">

@@ -1,0 +1,100 @@
+---
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+---
+
+<div class:list={["avatar-frame shrink-0", { compact }]}>
+<img
+  id="personal-avatar"
+  src="/bitmojis/smiling.png"
+  alt="Anika smiling"
+  width="175"
+  height="175"
+/>
+</div>
+
+<style>
+  .avatar-frame {
+    --portrait-size: 148px;
+    --portrait-top: 13.5px;
+    position: relative;
+    width: 175px;
+    height: 175px;
+  }
+
+  .avatar-frame.compact {
+    --portrait-size: 40px;
+    --portrait-top: 0px;
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Normalize the visible artwork, excluding each source's transparent padding.
+     Every portrait is 148px tall and starts at the same left edge. */
+  #personal-avatar {
+    position: absolute;
+    max-width: none;
+    width: calc(var(--source-width) * var(--portrait-size) / var(--subject-height));
+    height: calc(var(--source-height) * var(--portrait-size) / var(--subject-height));
+    left: calc(-1 * var(--subject-left) * var(--portrait-size) / var(--subject-height));
+    top: calc(var(--portrait-top) - var(--subject-top) * var(--portrait-size) / var(--subject-height));
+  }
+
+  #personal-avatar[src="/bitmojis/smiling.png"] {
+    --source-width: 1374;
+    --source-height: 1145;
+    --subject-height: 828;
+    --subject-left: 371;
+    --subject-top: 185;
+  }
+
+  #personal-avatar[src="/bitmojis/laptop.png"] {
+    --source-width: 1266;
+    --source-height: 1242;
+    --subject-height: 970;
+    --subject-left: 190;
+    --subject-top: 170;
+  }
+
+  #personal-avatar[src="/bitmojis/thinking.png"] {
+    --source-width: 1196;
+    --source-height: 1315;
+    --subject-height: 991;
+    --subject-left: 227;
+    --subject-top: 187;
+  }
+</style>
+
+<script is:inline>
+  (() => {
+    const avatar = document.getElementById("personal-avatar");
+    const portraits = [
+      { src: "/bitmojis/smiling.png", alt: "Anika smiling" },
+      { src: "/bitmojis/laptop.png", alt: "Anika behind her laptop" },
+      { src: "/bitmojis/thinking.png", alt: "Anika thinking" },
+    ];
+
+    try {
+      const key = "personal-avatar-index";
+      const stored = sessionStorage.getItem(key);
+      let index = stored === null ? 0 : Number(stored);
+      if (!Number.isInteger(index) || index < 0 || index >= portraits.length) {
+        index = 0;
+      }
+
+      // Keep the current portrait on navigation; advance only on refresh.
+      const navigation = performance.getEntriesByType("navigation")[0];
+      if (stored !== null && navigation?.type === "reload") {
+        index = (index + 1) % portraits.length;
+      }
+
+      avatar.src = portraits[index].src;
+      avatar.alt = portraits[index].alt;
+      sessionStorage.setItem(key, String(index));
+    } catch {
+      // The smiling portrait also works without browser storage or JavaScript.
+    }
+  })();
+</script>

@@ -5,6 +5,7 @@ import { homePageContent, identity } from "../config";
 import SocialLink from "../components/SocialLink.astro";
 import Link from "../components/Link.astro";
 import { getCollection } from "astro:content";
+import RotatingAvatar from "../components/RotatingAvatar.astro";
 
 let posts = await getCollection("posts");
 posts = posts.filter((p) => !p.data?.draft);
@@ -20,13 +21,7 @@ posts.splice(3)
   <section class="mt-10 max-w-2xl mx-auto px-6 scroll-reveal">
     <h1 class="font-bold text-3xl mb-8">{identity.name}</h1>
     <div class="flex items-center gap-6 mb-8">
-      <Image
-        src={identity.logo}
-        alt={identity.name}
-        width={150}
-        height={150}
-        class="rounded-full shrink-0"
-      />
+      <RotatingAvatar />
       <div class="group flex flex-col gap-2">
         {
           homePageContent.socialLinks.map((link) => (
