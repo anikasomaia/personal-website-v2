@@ -7,7 +7,7 @@ image: { url: "/leibniz.jpg", alt: "The Leibniz Calculator" }
 draft: false
 ---
 
-Every generation has a version of this anxiety. The calculator will ruin our ability to do arithmetic. The word processor will make us lazy writers. Print will destroy memory. Before that, writing itself — Socrates worried that it would hollow out the mind, that a text couldn't answer back, couldn't respond to questions, couldn't really know anything. He wasn't wrong about any of it. He was wrong about what it meant.
+Every generation has a version of this anxiety. The calculator will ruin our ability to do arithmetic. The word processor will make us lazy writers. Print will destroy memory. Before that, writing itself — Socrates worried that it would hollow out the mind, that a text couldn't answer back, couldn't respond to questions, couldn't really know anything.
 
 The history of human thought is largely a history of offloading. We did not develop civilization by becoming smarter in some raw biological sense. We developed it by building better external scaffolding. Writing gave us the ability to store and transmit knowledge beyond the span of a single life. The printing press distributed it. Cheap paper — and this is underrated — gave people a disposable surface to think on. The mathematics of the 17th and 18th centuries was probably not made possible by better brains. It was made possible by paper that cost almost nothing, so that a mathematician could fill sheets with false starts, scribble in margins, follow a line of reasoning that turned out to be wrong without that failure being precious. The scratch pad is a cognitive technology. Waste is a feature.
 

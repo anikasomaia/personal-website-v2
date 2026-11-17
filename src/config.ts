@@ -213,21 +213,11 @@ export const workPageContent: WorkPageContent = {
       employmentType: "Internship",
       company: {
         name: "Valthos",
-        image: "/valthos.png",
+        image: "/valthos.svg",
         url: "https://valthos.com",
       },
       date: "Oct 2026 - Present",
-      description: "deploying biological intelligence",
-    },
-    {
-      title: "Scholar",
-      company: {
-        name: "Neo",
-        image: "/neo.webp",
-        url: "https://neo.com",
-      },
-      date: "Sep 2025 - Present",
-      description: "",
+      description: "Deploying biological intelligence",
     },
     {
       title: "Member of Technical Staff",
@@ -238,7 +228,7 @@ export const workPageContent: WorkPageContent = {
         url: "https://deepmind.google",
       },
       date: "Jun 2026 - Aug 2026",
-      description: "behavioral evaluation of frontier models",
+      description: "Behavioral evaluation of frontier models",
     },
     {
       title: "Software Engineer",
@@ -249,7 +239,7 @@ export const workPageContent: WorkPageContent = {
         url: "https://www.langchain.com/langsmith",
       },
       date: "Jun 2025 - Dec 2025",
-      description: "observability and error detection for long-running agents",
+      description: "Observability and error detection for long-running agents",
     },
     {
       title: "Research Assistant - ARISE Lab",
@@ -279,7 +269,7 @@ export const workPageContent: WorkPageContent = {
         url: "https://www.columbia.edu",
       },
       date: "Jan 2025 - Jun 2025",
-      description: "Conceived and developed a novel mathematical framework and benchmark dataset for detecting cumulative risk in AI agents, securing Open Philanthropy funding.",
+      description: "Developed a novel mathematical framework and benchmark dataset for detecting cumulative risk in AI agents, securing Open Philanthropy funding.",
     },
     {
       title: "Product and Research",
