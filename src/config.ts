@@ -13,7 +13,7 @@ import type {
 export const identity: Identity = {
   name: "Anika Somaia",
   logo: "/logo.webp",
-  email: "anika.somaia@columbia.edu",
+  email: "anika@somaia.co",
 };
 
 export const navBarLinks: NavBarLink[] = [
@@ -60,7 +60,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     title: "Mail",
-    url: "mailto:anika.somaia@columbia.edu",
+    url: "mailto:anika@somaia.co",
     icon: "mdi:email",
     external: true,
   },
@@ -150,7 +150,7 @@ I enjoy pretty much anything outdoors, especially snowboarding and kitesurfing.
     },
   },
   connect: {
-    description: `You can reach out to me at <a href="mailto:anika.somaia@columbia.edu" style="font-weight: bold; text-decoration: none; color: inherit;">anika.somaia@columbia.edu</a>.`, // Markdown is supported
+    description: `You can reach out to me at <strong>anika [at] somaia [dot] co</strong>.`, // Markdown is supported
     links: [],
   },
 };
