@@ -4,7 +4,7 @@ import type { ResumeItem } from "../types/config";
 
 type Props = ResumeItem;
 
-const { title, company, date, description } = Astro.props;
+const { title, company, date, description, employmentType } = Astro.props;
 ---
 
 <div class="py-4 border-b border-gray-200 dark:border-gray-900 last:border-b-0">
@@ -22,7 +22,9 @@ const { title, company, date, description } = Astro.props;
       />
       <div class="flex-1">
         <h3 class="font-medium text-lg">{title}</h3>
-        <p class="text-sm opacity-60 mb-2">{company.name}</p>
+        <p class="text-sm opacity-60 mb-2">
+          {company.name}{employmentType && ` · ${employmentType}`}
+        </p>
         {description && (
           <p class="text-sm opacity-80 leading-relaxed">{description}</p>
         )}
