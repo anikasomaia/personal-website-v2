@@ -44,6 +44,7 @@ export type HomePageContent = {
 
 export type ResumeItem = {
   title: string;
+  employmentType?: string;
   company: {
     name: string;
     image: string;

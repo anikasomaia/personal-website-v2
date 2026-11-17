@@ -209,24 +209,47 @@ export const workPageContent: WorkPageContent = {
   description: `I've worked across research, education, and industry, focusing on AI safety, machine learning, and software engineering.`,
   items: [
     {
-      title: "Research Engineer",
+      title: "Member of Technical Staff",
+      employmentType: "Internship",
+      company: {
+        name: "Valthos",
+        image: "/valthos.png",
+        url: "https://valthos.com",
+      },
+      date: "Oct 2026 - Present",
+      description: "deploying biological intelligence",
+    },
+    {
+      title: "Scholar",
+      company: {
+        name: "Neo",
+        image: "/neo.webp",
+        url: "https://neo.com",
+      },
+      date: "Sep 2025 - Present",
+      description: "",
+    },
+    {
+      title: "Member of Technical Staff",
+      employmentType: "Internship",
       company: {
         name: "Google DeepMind",
         image: "/deepmind_icon.png",
         url: "https://deepmind.google",
       },
-      date: "Jun 2026 - Present",
-      description: "",
+      date: "Jun 2026 - Aug 2026",
+      description: "behavioral evaluation of frontier models",
     },
     {
       title: "Software Engineer",
+      employmentType: "Internship",
       company: {
         name: "LangChain",
         image: "/langchain.webp",
         url: "https://www.langchain.com/langsmith",
       },
       date: "Jun 2025 - Dec 2025",
-      description: "Observability and evals. Learn more →",
+      description: "observability and error detection for long-running agents",
     },
     {
       title: "Research Assistant - ARISE Lab",
@@ -259,7 +282,8 @@ export const workPageContent: WorkPageContent = {
       description: "Conceived and developed a novel mathematical framework and benchmark dataset for detecting cumulative risk in AI agents, securing Open Philanthropy funding.",
     },
     {
-      title: "Product and Research Intern",
+      title: "Product and Research",
+      employmentType: "Internship",
       company: {
         name: "Pika",
         image: "/pika.webp",
